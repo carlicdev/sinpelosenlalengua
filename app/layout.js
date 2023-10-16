@@ -1,17 +1,17 @@
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import './globals.css'
-import { Comic_Neue, Inter } from 'next/font/google'
+import { Poppins, Inter } from 'next/font/google'
 
 const inter = Inter({ 
   subsets: ['latin'],
   variable: '--font-inter',
  })
 
-const comicNeue = Comic_Neue({ 
-  weight: ['700'],
+const poppins = Poppins({ 
+  weight: ['800'],
   subsets: ['latin'],
-  variable: '--font-comic',
+  variable: '--font-poppins',
  })
 
 export const metadata = {
@@ -22,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${comicNeue.variable}`}>
+      <body className={`${inter.variable} ${poppins.variable}`}>
         <Navbar />
         {children}
         <Footer />

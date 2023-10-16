@@ -1,12 +1,10 @@
 import React from 'react'
 import PostCard from './PostCard'
 
-const PostList = () => {
+const PostList = ({posts}) => {
   return (
     <div className='flex flex-col gap-3'>
-        <PostCard />
-        <PostCard />
-        <PostCard />
+        {posts.map((post, index) => <PostCard post={post.node} index={index} key={index} />)}
     </div>
   )
 }

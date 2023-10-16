@@ -9,7 +9,9 @@ const Footer = () => {
         <div className='max-w-7xl w-full mx-auto'>
             <div className='flex flex-wrap'>
                 <div className='w-full md:w-1/2 lg:w-1/4'>
-                    <Logo />
+                    <Link href='/'>
+                        <Logo />
+                    </Link>
                 </div>
                 <div className='w-full md:w-1/2 lg:w-1/4 flex flex-col gap-2'>
                     {FOOTER_LINKS.map((link) => (

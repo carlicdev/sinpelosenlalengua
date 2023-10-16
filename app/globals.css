@@ -7,6 +7,6 @@ body {
   background-color: #f3f4f6;
 }
  
-.special-text {
-  font-family: var(--font-comic);
+.text-special {
+  font-family: var(--font-poppins);
 }
